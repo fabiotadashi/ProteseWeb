@@ -1,0 +1,9 @@
+<script src="node_modules/chart.js/src/chart.js"></script>
+<div class="graph">
+  <canvas baseChart [colors]="myColors" [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType"
+    (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+</div>
+<div class="label">
+  <h1 class="title is-3">80%</h1>
+  <h2 class="subtitle is-5">de doações alcançadas</h2>
+</div>
